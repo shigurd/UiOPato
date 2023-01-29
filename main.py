@@ -300,7 +300,7 @@ class QuizApp(tk.Tk):
         sources_text.pack(anchor='w')
         sources_link = tk.Text(self.source_info_container, font=self.configs_tk['font'], height=2, borderwidth=0)
         sources_link.insert(1.0,
-                    'https://studmed.uio.no/elaring/fag/patologi/index.shtml')
+                    'https://studmed.uio.no/elaring/fag/patologi/index.shtml\nhttps://github.com/shigurd/UiOPato')
         sources_link.configure(state='disabled')
         sources_link.pack(anchor='w')
 
