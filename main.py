@@ -285,7 +285,7 @@ class QuizApp(tk.Tk):
                              wraplength=self.configs_tk['w_length'])
         info_text.pack(anchor='w')
         filter_explaination = tk.Label(self.tag_filter_container,
-                                       text='Filtrerer oppgaver i utvalget basert på ønskede stikkord. Bruk "," mellom hvert stikkord. Filteret er case og space sensitivt (feks vil "slag" vs "slag " ikke være det samme, heller ikke "CT" vs "ct". Tomt filter inkluderer alle oppgaver for utvalget.',
+                                       text='Filtrerer oppgaver i utvalget basert på ønskede stikkord. Bruk "," mellom hvert stikkord. Filteret er case og space sensitivt (feks vil "slag" vs "slag " ikke være det samme, heller ikke "CT" vs "ct"). Tomt filter inkluderer alle oppgaver for utvalget.',
                                        font=self.configs_tk['font_i'], justify='left',
                                        wraplength=self.configs_tk['w_length'])
         filter_explaination.pack(anchor='w')
