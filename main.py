@@ -132,16 +132,16 @@ class QuizApp(tk.Tk):
 
         if len(self.slides[self.current_slide_index].extra_slide_id) != 0:
 
-            org_button = tk.Button(self.extra_button_container, text=f'Hovedsnitt', command=lambda:self.on_link_button(self.slides[self.current_slide_index].slide_link), font=self.configs_tk['font'],
-                                   height=1, width=13)
+            org_button = tk.Button(self.extra_button_container, text=f'H&E', command=lambda:self.on_link_button(self.slides[self.current_slide_index].slide_link), font=self.configs_tk['font'],
+                                   height=1, width=13, bg='white')
             org_button.grid(row=0, column=0)
 
             self.extra_link_vars = []
 
             for r in self.slides[self.current_slide_index].extra_slide_id:
                 self.extra_link_vars.append(tk.StringVar())
-                self.extra_link_vars[-1] = r
-                button = tk.Button(self.extra_button_container, text=f'Extrasnitt {len(self.extra_link_vars)}', command=lambda x=r:self.on_link_button(x), font=self.configs_tk['font'], height=1, width=13)
+                self.extra_link_vars[-1] = r[0]
+                button = tk.Button(self.extra_button_container, text=f'{r[1]}', command=lambda x=r[0]:self.on_link_button(x), bg='white', font=self.configs_tk['font'], height=1, width=13)
                 button.grid(row=0, column=len(self.extra_link_vars))
 
 
@@ -253,7 +253,7 @@ class QuizApp(tk.Tk):
                                  bg='white', height=1, width=13, font=self.configs_tk['font'])
         stats_button.grid(row=1, column=3)
 
-        self.remaining_questions_number = tk.Label(self.start_container, text='Valgte slides: 0',
+        self.remaining_questions_number = tk.Label(self.start_container, text='Utvalg slides: 0',
                                                    font=self.configs_tk['font_i'], justify='left',
                                                    wraplength=self.configs_tk['w_length'])
         self.remaining_questions_number.grid(row=0, column=4, sticky='nw')

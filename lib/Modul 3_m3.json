@@ -32,7 +32,7 @@
 		"slide_text": "11 uker gammel jente innlegges OUS med leversvikt av uklar årsak. Ved ultralydsundersøkelse av leveren påvises knuteformete lesjoner. Det tas nålebiopsi fra lever for diagnose. Undersøk leverbiopsien og konsentrer deg først og fremst på forandringene i hepatocyttene – hva er galt med disse?",
 		"slide_comment": "Levercellene er betydelig forstørrete og mange har lyst cytoplasma med moderate mengder av små gulbrune korn. Dette kan være gallepigment, men spesialfarging av snitt med Perls fargemetode som viser blå korn ved jernavleiring (snitt I-4b), er positiv. Diagnosen er dermed neonatal hemokromatose en tilstand som oppfattes som en alloimmun leversykdom. Mekanismen for opphopningen av jern ved denne tilstanden er ikke fullstendig klarlagt.",
 		"slide_goal": "Du skal kunne drøfte lysmikroskopiske funn og gjøre rede for de 4 hovedmekanismene for intracellulær avleiring.",
-		"extra_slide_id": ["https://studmed.uio.no/microscope?slide=/uio_pathology/I_4b.ecw"],
+		"extra_slide_id": [["https://studmed.uio.no/microscope?slide=/uio_pathology/I_4b.ecw","(Perls)"]],
 		"m8_status": "0"
     },
     "m3_5": {
@@ -68,7 +68,7 @@
 		"slide_text": "50-årig tidligere frisk mann som innlegges akutt med betydelig dyspnoe og perifere ødemer. Ved undersøkelsen av pasienten i akuttmottaket påvises nyresvikt og blodtrykk 230/160. I den videre utredning gjøres blant annet nyrebiopsi for å klargjøre mulig bakenforliggende nyresykdom. Undersøk biopsien og studer forandringene i små kar – forandringene kommer tydligere frem i PAS-fargede snitt (snitt a) enn i rutinefargede snitt (snitt b) – på hvilken måte er karene forandret?",
 		"slide_comment": "Små arterier og arterioler har betydelig fortykket karvegg. Fortykkelsen skyldes proliferasjon av glatt muskulatur med et mønster som ofte beskrives som løkringer. Bildet er typisk for karforandringer ved alvorlig, såkalt malign hypertensjon og passer med det påviste svært høye blodtrykket til pasienten som har gitt hjerte- og nyresvikt.",
 		"slide_goal": "Du skal kunne drøfte lysmikroskopiske funn og gjøre rede for cellulære og patofysiologiske mekanismer ved hyperplasi.",
-		"extra_slide_id": ["https://studmed.uio.no/microscope?slide=/uio_pathology/i_8.ecw"],
+		"extra_slide_id": [["https://studmed.uio.no/microscope?slide=/uio_pathology/i_8.ecw","(PAS)"]],
 		"m8_status": "0"
     },
     "m3_9": {
@@ -383,7 +383,7 @@
 		"slide_text": "37 år gammel kvinne der vaginalcytologi ved screeningundersøkelse hadde vist ikke nærmere graderbar dysplasi. Kolposkopi viste forandring i portio svarende til kl. 2. Biopsi herfra og fra motsatt side. Studer de delene av de to biopsiene som er dekket av plateepitel. På hvilken måte er plateepitelet i den ene biopsien patologisk forandret?",
 		"slide_comment": "Den ene biopsien viser tilnærmet normalt epitel bortsett fra en viss tendens til koilocytose (lys sone rundt en noe uregelmessig kjerne). Koilocytose er en morfologisk indikator på infeksjon med humant papillom virus (HPV). Basalcellene er normalstore og cellene modner mot overflaten på normal måte. I den andre biopsien foreligger en modningsforstyrrelse, dysplasi, i epitelet der en stor mengde store uregelmessige kjerner fyller epitellaget. Opp mot overflaten er det i noen områder koilocytter. Dysplasien graderes etter hvor stor del av den totale epiteltykkelsen som består av atypiske celler/kjerner. Under 1/3 av tykkels tilsvarer lett dysplasi, mellom 1/3 og 2/3 moderat dysplasi og mer enn 2/3 uttalt dysplasi. Hvis hele epiteltykkelsen består av atypiske celler/kjerner klassifiseres forandringen som carcinoma in situ (I cervix uteri brukes den engelskspråklige forkortelsen CIN=cervical intraepithelial neoplasia for gradering av dysplasien i CIN 1, 2 og 3). Vedlagt er også snitt immunfarget for Ki-67 (snitt b), en markør for celledeling. I det dysplastiske epitelet er en meget høy andel av epitelcellene farget.",
 		"slide_goal": "Du skal kunne drøfte lysmikroskopiske funn og cellulære karakteristika ved dysplasi i plateepitel.",
-		"extra_slide_id": ["https://studmed.uio.no/microscope?slide=/uio_pathology/bg_07_13825_2_ki67_60x-2.ecw"],
+		"extra_slide_id": [["https://studmed.uio.no/microscope?slide=/uio_pathology/bg_07_13825_2_ki67_60x-2.ecw","(Ki67)"]],
 		"m8_status": "0"
     },
     "m3_44": {
@@ -527,7 +527,7 @@
 		"slide_text": "62 år gammel mann med lang anamnese med hjertesykdom. Tidligere behandlet med stenting av koronararstenoser og i lengre tid brukt statiner på grunn av hyperkolesterolemi. Pasienten faller livløs om i hjemmet, men gjenopplives og fraktes til sykehus med luftambulanse. Han dør etter 6 timer i sykehus med ventrikkelflimmer som ikke lar seg heve. Obduksjonen viser omfattende forandringer i hjertet med ujevnt fargede snittflater. Snitt fra 2 områder i hjertet. Studer hjertemuskulaturen og beskriv de patologiske forandringene. Kan du si noe om forandringenes alder? ",
 		"slide_comment": "I myokard ses i snitt VI-9a områder med nøytrofile granulocytter i interstitiet. Hjertemuskelcellene i slike områder har varierende fargbarhet og mangler eller har oppsvulmete kjerner. Funnet passer med ferskt hjerteinfarkt 1-2 dager gammelt (kfr. snitt VI-1). Ved obduksjonen ble det også funne fersk sentral trombe i venstre koronararterie. I mange muskelceller ses granulære rødbrune avleiringer. Dette er lipofuscin i lysosomer og illustrerer økt omsetning av organeller. Lipofuscinavleiringer er et aldringsfenomen, men aksentueres ved kronisk iskemi eller andre former for cellulær stress. Slike avleiringer forekommer i mange organer, men er mest uttalt i hjerte og lever. I snitt VI-9b som er tatt fra et nærliggende område, ses deler av hjertemuskulaturen erstattet av granulasjonsvev med sparsom kronisk betennelse og varierende grader av kollagenisering. Bildet passer med infarkt under organisering og er 2-3 uker gammelt (kfr. også med snitt III-2).",
 		"slide_goal": "Du skal kunne drøfte lysmikroskopiske funn og patogenetisk mekanisme ved akutt hjerteinfarkt og mekanismen for lipofuscinavleiring.",
-		"extra_slide_id": ["https://studmed.uio.no/microscope?slide=/uio_pathology/vi_9b.ecw"],
+		"extra_slide_id": [["https://studmed.uio.no/microscope?slide=/uio_pathology/vi_9b.ecw","(H&E snitt b)"]],
 		"m8_status": "1"
     },
     "m3_60": {
@@ -590,7 +590,7 @@
 		"slide_text": "62 år gammel kvinne. Hun har vært mangeårig storrøyker. De siste månedene kjent seg slapp og trøtt med økende hosteplager. Utredning viser tumor i venstre lunges overlapp. Operert med fjerning av venstre overlapp. Samtidig uttatte lymfeknuter viste metastaser. Snitt fra operasjonspreparatet. Studer snittene fra tumor. Hvilken type av malign lungetumor er dette? ",
 		"slide_comment": "Snittene er 2 nivåer av samme området. Snittet viser en bronchus gjennomvokst av et meget celletett tumorvev. Tumorcellene som er små med ytterst sparsomt cytoplasma. Cellene ligner lymfocytter, men har mer kantede og rundovale kjerner. Det er områder med multiple mitoser og apoptoser, andre områder med nekrose. Det foreligger et småcellet lungekarsinom. For å sikre diagnostikken kan det være formålstjenlig å gjøre immunhistokjemiske undersøkelser av tumor med antistoff mot CD56, kromogranin A og synaptofysin som i dette tilfelle alle er positive, hvilket bekrefter diagnosen. Farging med proliferasjonsmarkøren Ki-67 viser at en stor andel av tumorcellene prolifererer. ",
 		"slide_goal": "Du skal kunne drøfte histologiske funn og kjenne igjen dette som et småcellet karsinom. ",
-		"extra_slide_id": ["https://studmed.uio.no/microscope?slide=/uio_pathology/bg_11_13460_3_cd56_til_nevro_40x.ecw","https://studmed.uio.no/microscope?slide=/uio_pathology/bg_11_13460_3_chromogr_a_40x.ecw","https://studmed.uio.no/microscope?slide=/uio_pathology/bg_11_13460_3_ki-67_ventana_40x-2.ecw","https://studmed.uio.no/microscope?slide=/uio_pathology/bg_11_13460_3synaptophysin_40x-2.ecw"],
+		"extra_slide_id": [["https://studmed.uio.no/microscope?slide=/uio_pathology/bg_11_13460_3_cd56_til_nevro_40x.ecw","(CD56)"],["https://studmed.uio.no/microscope?slide=/uio_pathology/bg_11_13460_3_chromogr_a_40x.ecw","(Kromogranin A)"],["https://studmed.uio.no/microscope?slide=/uio_pathology/bg_11_13460_3_ki-67_ventana_40x-2.ecw","(Ki67)"],["https://studmed.uio.no/microscope?slide=/uio_pathology/bg_11_13460_3synaptophysin_40x-2.ecw","(Synaptofysin)"]],
 		"m8_status": "1"
     },
     "m3_67": {
@@ -833,7 +833,7 @@
 		"slide_text": "57 år gammel mann med overvekt. Han oppgir at han drikker en halv flaske vin per helg. Leveren palpabel én fingerbredde under costalbuen. Det er påvist forhøyede transaminaser (ASAT/ALAT-ratio > 1). Fibroscan viste forhøyet verdi (12 kPa) som taler for fibrose. Videre utredning med leverbiopsi. Studer levervevsstrukturen. Hvilke typer av histopatologiske forandringer foreligger?",
 		"slide_comment": "Det sees leverparenchym med bevart arkitektur. Et stort antall hepatocytter inneholder store, intracytoplasmatiske vakuoler av lagret fett (steatose). Enkelte portalområder er lett utvidede, men de er for det meste skarpt avgrensede. I leverparenchymet sees noen få nekrotiske hepatocytter og enkelte små spredte betennelsesinfiltrater bestående av lymfocytter og enkelte nøytrofile granulocytter. Bindevevsfarging viser lett fokal pericellulær fibrose i nærheten av sentralvenene (sentrolobulært). Forandringene er sparsomme og passer med begynnende steatohepatitt.",
 		"slide_goal": "Du skal kunne drøfte histologiske funn og kjenne igjen dette som fettlever med inflammatorisk komponent og dermed steatohepatitt.",
-		"extra_slide_id": ["https://studmed.uio.no/microscope?slide=/uio_pathology/X-2b.ecw"],
+		"extra_slide_id": [["https://studmed.uio.no/microscope?slide=/uio_pathology/X-2b.ecw","(Bindevev)"]],
 		"m8_status": "1" 
     },
     "m3_94": {
@@ -842,7 +842,7 @@
 		"slide_text": "51 år gammel kvinne som søkte lege på grunn av kløe og slapphet. Blodprøvene viste forhøyet serum ALP og test på forekomst av mitokondrieantistoff (AMA) var positiv. Videre utredning med leverbiopsi viste ombygget leverarkitektur. Utredningen konkluderte med at pasienten burde få utført en levertransplantasjon og den ekstirperte (uttatte) leveren ble sent til histopatologisk undersøkelse. Makroskopisk undersøkelse av leveren som veide 1551 g viste jevn overflate og blek snittflate. Studer snittet fra den ekstirperte leveren og beskriv de histopatologiske forandringene.",
 		"slide_comment": "Det sees utvidede portalområder med fibrose og brodannelse. Det sees flekkvis portal kronisk betennelse, fokalt i form av tette lymfocyttære infiltrater rundt små galleganger. Betennelsen affiserer delvis gallegangsepitelet ved infiltrasjon av lymfocytter i epitellaget, men det sees ingen konsentrisk fibrose rundt gallegangene. Det er tap av opprinnelige små galleganger, men samtidig sees lett gallegangsproliferasjon i bindevevsdragene særlig grensesonen mot lobulus (fremhevet av immunhistokjemisk farging for cytokeratin 19). Det sees kun minimal interfaseaktivitet og ingen nevneverdig lobulær betennelse. De patologiske forandringene er forenlige med primær biliær cholangitt (tidligere betegnelse primær biliær cirrhose). ",
 		"slide_goal": "Du skal kunne drøfte histologiske funn og kjenne igjen dette som en inflammatorisk leversykdom med affeksjon og tap av små galleganger.",
-		"extra_slide_id": ["https://studmed.uio.no/microscope?slide=/uio_pathology/X-3b.ecw"],
+		"extra_slide_id": [["https://studmed.uio.no/microscope?slide=/uio_pathology/X-3b.ecw","(Cytokreatin 19)"]],
 		"m8_status": "1" 
     },
     "m3_95": {
@@ -896,7 +896,7 @@
 		"slide_text": "64 år gammel kvinne som søkte lege på grunn av tiltagende magesmerter og slapphet i de siste 3 måneder. CT abdomen viste en ca. 60 mm stor tumor i caput pancreatis og minst to metastase-suspekte peripancreatiske lymfeknuter. Til tross for tumors størrelse ble den vurdert som primært resektabel, og pasienten gjennomgikk pancreatoduodenektomi. Operasjonspreparatet viste en velavgrenset 66 x 52 x 52 mm stor tumor med fast elastisk vev og sentral cystisk forandring. I tillegg ble det påvist tre opp til 16 mm store, metastasesuspekte lymfeknuter i nærheten av pancreashodet. ",
 		"slide_comment": "Det sees en velavgrenset, ekspansivt heller enn infiltrativt voksende tumor. Tumoren er cellerik, og viser lite stroma. Tumorcellene er ensartede og har runde kjerner med jevn kjernemembran og et stort, lett granulert, eosinofilt cytoplasma. Mitoser er ikke sett. Mellom tumorcellene sees et delikat nettverk av kapillære blodkar. Ved siden av tumor sees pancreasparenchym som er delvis atrofisk og erstattet av fettvev. Immunhistokjemisk farging for synaptofysin viser diffus positivitet, som viser at dette er en nevroendokrin tumor. Kun en liten del (< 2%) av tumorcellene farger positivt for Ki67. Histologisk undersøkelse bekreftet tumormetastasering i 3 peripancreatiske lymfeknuter. Dette er en nevroendokrin tumor i pancreas med lav proliferativ aktivitet, men med regionale lymfeknutemetastaser.",
 		"slide_goal": "Du skal kunne drøfte histologiske funn og kjenne igjen dette som en nevroendokrin tumor.",
-		"extra_slide_id": ["https://studmed.uio.no/microscope?slide=/uio_pathology/X-9b.ecw","https://studmed.uio.no/microscope?slide=/uio_pathology/X-9c.ecw"],
+		"extra_slide_id": [["https://studmed.uio.no/microscope?slide=/uio_pathology/X-9b.ecw","(Synaptofysin)"],["https://studmed.uio.no/microscope?slide=/uio_pathology/X-9c.ecw","(Ki67)"]],
 		"m8_status": "1" 
     },
     "m3_101": {
@@ -905,7 +905,7 @@
 		"slide_text": "58 år gammel mann som ble innlagt på grunn av magesmerter og gulsott. CT abdomen viste en 25 mm lang striktur i ductus choledochus og uregelmessig parenchym i caput pancreatis. Serummarkøren CA19-9 for pancreascancer var normal. Med klinisk og røntgenologisk mistanke om distal choledochuscancer eller pancreascancer ble en Whipple operasjon utført. Operasjonspreparatet viste konsentrisk veggfortykkelse av ductus choledochus, mens pancreasparenchymet viste en utvisket lobulering og diffus økt konsistens. ",
 		"slide_comment": "Det sees en avsmalnet gallegang på grunn av tett infiltrasjon av gallegangsveggen med lymfocytter og plasmaceller og ledsagende fibrose. Gallegangsepitelet er upåfallende. Lignende forandringer sees også i gangstrukturer i det tilgrensende pancreasparenchymet. Sistnevnte viser avansert atrofi med kun fokalt noen få gjenværende acinære cellegrupper. Immunhistokjemisk farging for IgG4 viser at betennelsesinfiltratet inneholder utallige IgG4-positive plasmaceller (rød-markerte celler). Forandringene er forenlige med IgG4-assosiert sykdom med affeksjon av pancreas («autoimmun pancreatitt») og ductus choledochus.",
 		"slide_goal": "Du skal kunne drøfte histologiske funn og kjenne igjen dette som en inflammatorisk sykdom som affiserer både pancreas og galleveier.",
-		"extra_slide_id": ["https://studmed.uio.no/microscope?slide=/uio_pathology/X-10a.ecw"],
+		"extra_slide_id": [["https://studmed.uio.no/microscope?slide=/uio_pathology/X-10a.ecw","(IgG4)"]],
 		"m8_status": "0" 
     },
     "m3_102": {
