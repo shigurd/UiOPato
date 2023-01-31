@@ -37,7 +37,7 @@ def check_tag_in_string(slide, comma_sepatered_tags_list):
 
 def input_tags_to_list(input_tags_string):
     comma_sepatered_tags_list = input_tags_string.split(',')
-    comma_sepatered_tags_list = [i.strip(' ') for i in comma_sepatered_tags_list]
+    #comma_sepatered_tags_list = [i.strip(' ') for i in comma_sepatered_tags_list]
 
     return comma_sepatered_tags_list
 
@@ -284,8 +284,10 @@ class QuizApp(tk.Tk):
                              text='STIKKORD FILTER:', font=self.configs_tk['font_b'], justify='left',
                              wraplength=self.configs_tk['w_length'])
         info_text.pack(anchor='w')
-        filter_explaination = tk.Label(self.tag_filter_container, text='Filtrerer oppgaver i utvalget basert på ønskede stikkord. Bruk "," mellom hvert stikkord (case sensitivt). Tomt filter inkluderer alle oppgaver for utvalget.', font=self.configs_tk['font_i'], justify='left',
-                             wraplength=self.configs_tk['w_length'])
+        filter_explaination = tk.Label(self.tag_filter_container,
+                                       text='Filtrerer oppgaver i utvalget basert på ønskede stikkord. Bruk "," mellom hvert stikkord. Filteret er case og space sensitivt (feks vil "slag" vs "slag " ikke være det samme, heller ikke "CT" vs "ct". Tomt filter inkluderer alle oppgaver for utvalget.',
+                                       font=self.configs_tk['font_i'], justify='left',
+                                       wraplength=self.configs_tk['w_length'])
         filter_explaination.pack(anchor='w')
 
         self.tag_input = tk.Text(self.tag_filter_container, font=self.configs_tk['font'], height=1, borderwidth=0)
