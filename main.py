@@ -17,6 +17,20 @@ class SlideEntry:
         self.slide_goal = slide_dict['slide_goal']
         self.extra_slide_id = slide_dict['extra_slide_id']
         self.m8_status = slide_dict['m8_status']
+        self.slide_notes = slide_dict['notes']
+        self.json_name = slide_dict['json_name']
+        self.slide_n = slide_dict['slide_n']
+
+    def modify_json(self):
+        file_pth = self.json_name
+
+        with open(file_pth, "r",encoding="utf8") as file_json:
+            file_dict_temp = json.load(file_json)
+
+        file_dict_temp[f'{self.json_name.rsplit(".", 1)[0].rsplit("_", 1)[-1]}_{self.slide_n}']['notes'] = self.slide_notes
+
+        with open(file_pth, "w", encoding="utf8") as file_json:
+            json.dump(file_dict_temp, file_json)
 
 
 def check_tag_in_string(slide, comma_sepatered_tags_list):
@@ -179,6 +193,12 @@ class QuizApp(tk.Tk):
                                      wraplength=self.configs_tk['w_length'])
         self.goal_text_id.pack(anchor='w')
 
+        self.notes_id = tk.Label(self.slide_container, text='', font=self.configs_tk['font_b'], justify='left',
+                                wraplength=self.configs_tk['w_length'], pady=10)
+        self.notes_id.pack(anchor='w')
+        self.notes_explanation = tk.Label(self.slide_container, text='', font=self.configs_tk['font_i'], justify='left',
+                                 wraplength=self.configs_tk['w_length'])
+        self.notes_explanation.pack(anchor='w')
 
     def create_frame_slide(self):
         self.frame_slide = tk.Frame(self.canvas_main, pady=20, padx=80)
@@ -253,7 +273,7 @@ class QuizApp(tk.Tk):
                                  bg='white', height=1, width=13, font=self.configs_tk['font'])
         stats_button.grid(row=1, column=3)
 
-        self.remaining_questions_number = tk.Label(self.start_container, text='Utvalg slides: 0',
+        self.remaining_questions_number = tk.Label(self.start_container, text='Utvalgte snitt: 0',
                                                    font=self.configs_tk['font_i'], justify='left',
                                                    wraplength=self.configs_tk['w_length'])
         self.remaining_questions_number.grid(row=0, column=4, sticky='nw')
@@ -384,9 +404,9 @@ class QuizApp(tk.Tk):
                         included_slides += 1
 
         if included_slides > 0:
-            self.remaining_questions_number.configure(text=f'Valge slides: {included_slides}')
+            self.remaining_questions_number.configure(text=f'Utvalgte snitt: {included_slides}')
         else:
-            self.remaining_questions_number.configure(text=f'Valge slides: 0')
+            self.remaining_questions_number.configure(text=f'Utvalgte snitt: 0')
 
 
     def on_start(self):
@@ -443,7 +463,16 @@ class QuizApp(tk.Tk):
 
 
     def on_skip(self):
+        try:
+            if self.slides[self.current_slide_index].slide_notes != self.notes.get("1.0", 'end-1c'):
+                new_notes = self.notes.get("1.0", 'end-1c')
+                self.slides[self.current_slide_index].slide_notes = new_notes
+                self.slides[self.current_slide_index].modify_json()
+        except:
+            pass
+
         self.current_slide_index += 1
+
         if self.current_slide_index >= len(self.slides):
             self.frame_slide.destroy()
             self.driver.close()
@@ -461,6 +490,14 @@ class QuizApp(tk.Tk):
 
 
     def on_menu(self):
+        try:
+            if self.slides[self.current_slide_index].slide_notes != self.notes.get("1.0", 'end-1c'):
+                new_notes = self.notes.get("1.0", 'end-1c')
+                self.slides[self.current_slide_index].slide_notes = new_notes
+                self.slides[self.current_slide_index].modify_json()
+        except:
+            pass
+
         self.frame_slide.destroy()
         self.driver.close()
         self.create_frame_menu()
@@ -474,6 +511,12 @@ class QuizApp(tk.Tk):
         self.comment_text_id.configure(text=self.slides[self.current_slide_index].slide_comment)
         self.goal_id.configure(text='Læringsmål:')
         self.goal_text_id.configure(text=self.slides[self.current_slide_index].slide_goal)
+
+        self.notes_id.configure(text='Egne notater:')
+        self.notes_explanation.configure(text='Trykk på det hvite og skriv med tastatur. "Enter" for ny linje og bruk "piltaster" dersom teksten går utenfor boksen. Teksten vil vises i fullt format ved neste visning. Teksten i boksen lagres etter trykk av "Meny", "Neste" eller "Skip".')
+        self.notes = tk.Text(self.slide_container, font=self.configs_tk['font'], height=len(self.slides[self.current_slide_index].slide_notes.split("\n")), borderwidth=0)
+        self.notes.insert(1.0, self.slides[self.current_slide_index].slide_notes)
+        self.notes.pack(anchor='w')
 
 
 if __name__ == '__main__':
