@@ -291,7 +291,7 @@ class QuizApp(tk.Tk):
                              text='INSTRUKSER:', font=self.configs_tk['font_b'], justify='left',
                              wraplength=self.configs_tk['w_length'])
         instructions_text.pack(anchor='w')
-        info_text = tk.Label(self.menu_info_container, text='START: Starter quiz for utvalget. Fullførte oppgaver ekskluderes med mindre de tilbakestilles.\nVIS UTVALG: Viser antall oppgaver og fullføringsgrad for utvalget.\n NB! Ikke lukk Chrome-vinduet som åpnes for hvert snitt da denne oppdateres automatisk.', font=self.configs_tk['font_i'], justify='left',
+        info_text = tk.Label(self.menu_info_container, text='START: Starter quiz for utvalget. Fullførte oppgaver ekskluderes med mindre de tilbakestilles.\nVIS UTVALG: Viser antall oppgaver og fullføringsgrad for utvalget.\nNB! Ikke lukk Chrome-vinduet som åpnes for hvert snitt da denne oppdateres automatisk.', font=self.configs_tk['font_i'], justify='left',
                                wraplength=self.configs_tk['w_length'])
         info_text.pack(anchor='w')
 
