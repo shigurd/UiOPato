@@ -291,7 +291,7 @@ class QuizApp(tk.Tk):
                              text='INSTRUKSER:', font=self.configs_tk['font_b'], justify='left',
                              wraplength=self.configs_tk['w_length'])
         instructions_text.pack(anchor='w')
-        info_text = tk.Label(self.menu_info_container, text='START: Starter quiz for utvalget. Fullførte oppgaver ekskluderes med mindre de tilbakestilles.\nVIS UTVALG: Viser antall oppgaver og fullføringsgrad for utvalget.', font=self.configs_tk['font_i'], justify='left',
+        info_text = tk.Label(self.menu_info_container, text='START: Starter quiz for utvalget. Fullførte oppgaver ekskluderes med mindre de tilbakestilles.\nVIS UTVALG: Viser antall oppgaver og fullføringsgrad for utvalget.\n NB! Ikke lukk Chrome-vinduet som åpnes for hvert snitt da denne oppdateres automatisk.', font=self.configs_tk['font_i'], justify='left',
                                wraplength=self.configs_tk['w_length'])
         info_text.pack(anchor='w')
 
@@ -475,7 +475,10 @@ class QuizApp(tk.Tk):
 
         if self.current_slide_index >= len(self.slides):
             self.frame_slide.destroy()
-            self.driver.close()
+            try:
+                self.driver.close()
+            except:
+                pass
             self.create_frame_menu()
         else:
             # Update the widgets with the new question
@@ -499,7 +502,10 @@ class QuizApp(tk.Tk):
             pass
 
         self.frame_slide.destroy()
-        self.driver.close()
+        try:
+            self.driver.close()
+        except:
+            pass
         self.create_frame_menu()
 
 
