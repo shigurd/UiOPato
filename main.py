@@ -519,8 +519,8 @@ class QuizApp(tk.Tk):
         self.goal_text_id.configure(text=self.slides[self.current_slide_index].slide_goal)
 
         self.notes_id.configure(text='Egne notater:')
-        self.notes_explanation.configure(text='Trykk på det hvite og skriv med tastatur. "Enter" for ny linje og bruk "piltaster" dersom teksten går utenfor boksen. Teksten vil vises i fullt format ved neste visning. Teksten i boksen lagres etter trykk av "Meny", "Neste" eller "Skip".')
-        self.notes = tk.Text(self.slide_container, font=self.configs_tk['font'], height=len(self.slides[self.current_slide_index].slide_notes.split("\n")), borderwidth=0)
+        self.notes_explanation.configure(text='Trykk på det hvite og skriv med tastatur. Teksten i boksen lagres etter trykk av "Meny", "Neste" eller "Skip".')
+        self.notes = tk.Text(self.slide_container, font=self.configs_tk['font'], borderwidth=0, wrap='word')
         self.notes.insert(1.0, self.slides[self.current_slide_index].slide_notes)
         self.notes.pack(anchor='w')
 
