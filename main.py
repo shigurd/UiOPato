@@ -7,6 +7,7 @@ import os
 import sys
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
+import chromedriver_autoinstaller
 
 class SlideEntry:
     def __init__(self, slide_dict):
@@ -528,6 +529,7 @@ class QuizApp(tk.Tk):
 if __name__ == '__main__':
     #pyinstaller main.spec
     os.chdir(os.path.join(os.path.dirname(sys.argv[0]), "lib"))
+    chromedriver_autoinstaller.install(cwd=True, path='lib')
 
 
     question_set_json_pths = ['Modul 3_m3.json', 'Modul 6_m6.json', 'Modul 8_m8.json']
