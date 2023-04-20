@@ -5,6 +5,7 @@ import json
 import random
 import os
 import sys
+import glob
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 import chromedriver_autoinstaller
@@ -525,6 +526,12 @@ class QuizApp(tk.Tk):
         self.notes.insert(1.0, self.slides[self.current_slide_index].slide_notes)
         self.notes.pack(anchor='w')
 
+    def quit_driver(self):
+        try:
+            self.driver.quit()
+            self.destroy()
+        except:
+            self.destroy()
 
 if __name__ == '__main__':
     #pyinstaller main.spec
@@ -535,6 +542,7 @@ if __name__ == '__main__':
     question_set_json_pths = ['Modul 3_m3.json', 'Modul 6_m6.json', 'Modul 8_m8.json']
     app = QuizApp(question_set_json_pths)
     app.tkraise()
+    app.protocol("WM_DELETE_WINDOW", app.quit_driver)
     app.mainloop()
 
 
