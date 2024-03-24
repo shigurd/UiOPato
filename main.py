@@ -8,7 +8,7 @@ import sys
 import glob
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-import chromedriver_autoinstaller
+#import chromedriver_autoinstaller
 
 class SlideEntry:
     def __init__(self, slide_dict):
@@ -138,8 +138,8 @@ class QuizApp(tk.Tk):
         options.add_experimental_option("detach", True)
         options.add_argument("--log-level=3")
         options.add_experimental_option('excludeSwitches', ['enable-logging'])
-        service = Service('chromedriver.exe')
-        self.driver = webdriver.Chrome(options=options, service=service)
+        #service = Service('chromedriver.exe')
+        self.driver = webdriver.Chrome(options=options, executable_path='chromedriver.exe')
 
 
     def create_extra_button_container(self):
@@ -536,7 +536,7 @@ class QuizApp(tk.Tk):
 if __name__ == '__main__':
     #pyinstaller main.spec
     os.chdir(os.path.join(os.path.dirname(sys.argv[0]), "lib"))
-    chromedriver_autoinstaller.install(cwd=True, path='lib')
+    #chromedriver_autoinstaller.install(cwd=True, path="lib")
 
 
     question_set_json_pths = ['Modul 3_m3.json', 'Modul 6_m6.json', 'Modul 8_m8.json']
