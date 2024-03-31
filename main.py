@@ -9,6 +9,8 @@ import glob
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 import chromedriver_autoinstaller
+from webdriver_manager.chrome import ChromeDriverManager
+from subprocess import CREATE_NO_WINDOW
 
 class SlideEntry:
     def __init__(self, slide_dict):
@@ -134,12 +136,14 @@ class QuizApp(tk.Tk):
         self.show_button.grid(row=0, column=1)
         previous_button.grid(row=0, column=2)
 
-        options = webdriver.ChromeOptions()
-        options.add_experimental_option("detach", True)
-        options.add_argument("--log-level=3")
-        options.add_experimental_option('excludeSwitches', ['enable-logging'])
-        #service = Service('chromedriver.exe')
-        self.driver = webdriver.Chrome(options=options, executable_path='chromedriver.exe')
+        #options = webdriver.ChromeOptions()
+        #options.add_experimental_option("detach", True)
+        #options.add_argument("--log-level=3")
+        #options.add_experimental_option('excludeSwitches', ['enable-logging'])
+
+        chrome_service = Service(ChromeDriverManager().install())
+        chrome_service.creationflags = CREATE_NO_WINDOW
+        self.driver = webdriver.Chrome(service=chrome_service)#, options=options)
 
 
     def create_extra_button_container(self):
