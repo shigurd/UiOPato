@@ -616,7 +616,7 @@ class QuizApp(tk.Tk):
 
     def create_quiz_slide_extra_button_container(self):
         self.quiz_slide_extra_button_container = tk.Frame(self.quiz_slide_frame)
-        self.quiz_slide_extra_button_container.pack(anchor='center')
+        self.quiz_slide_extra_button_container.pack(anchor='center', pady=10)
 
         if len(self.slides[self.current_slide_index].extra_slide_id) != 0:
 
