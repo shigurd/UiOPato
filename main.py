@@ -107,7 +107,7 @@ class QuizApp(tk.Tk):
         tk.Tk.__init__(self)
         self.file_path_list = file_path_list
         self.name = 'UiO PatoQuiz'
-        self.version = '25.04.24'
+        self.version = '09.04.25'
         self.intro_gif = 'ascii-dog.gif'
         self.configs_tk = {'font': 'Helvetica 12',
                            'font_i': 'Helvetica 12 italic',
@@ -685,7 +685,10 @@ class QuizApp(tk.Tk):
 
         chrome_options = Options()
         chrome_options.add_argument("--start-maximized")
-        chrome_service = Service(ChromeDriverManager().install())
+        chrome_install = ChromeDriverManager().install()
+        folder = os.path.dirname(chrome_install)
+        chromedriver_path = os.path.join(folder, "chromedriver.exe")
+        chrome_service = Service(chromedriver_path)
         chrome_service.creationflags = CREATE_NO_WINDOW
         self.driver = webdriver.Chrome(service=chrome_service, options=chrome_options)
 
