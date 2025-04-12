@@ -689,6 +689,7 @@ class QuizApp(tk.Tk):
         folder = os.path.dirname(chrome_install)
         chromedriver_path = os.path.join(folder, "chromedriver.exe")
         chrome_service = Service(chromedriver_path)
+        #chrome_service = Service(ChromeDriverManager().install())
         chrome_service.creationflags = CREATE_NO_WINDOW
         self.driver = webdriver.Chrome(service=chrome_service, options=chrome_options)
 
